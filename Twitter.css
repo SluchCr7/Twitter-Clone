@@ -125,12 +125,16 @@ li {
 }
 .LeftSection .Cards {
   margin-top: 20px;
+  display: flex ;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
 }
 .LeftSection .Cards .Card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 11px 10px;
+  padding: 0 10px;
   gap: 10px;
   width: -moz-fit-content;
   width: fit-content;
@@ -259,7 +263,6 @@ li {
 .ProfileListHome .SecondCloneHome:hover {
   background-color: var(--bg-left);
 }
-
 main {
   width: 90%;
   height: 100%;
@@ -283,7 +286,7 @@ main .MainTwetter .Mid-Aside .HomeBar {
   backface-visibility: hidden;
   position: fixed;
   z-index: 9;
-  width: 33.4%;
+  width: 40%;
 }
 main .MainTwetter .Mid-Aside .HomeBar .HeadingHome {
   font-weight: 700;
@@ -814,13 +817,23 @@ main .LastAside .WhoToFollow .MoreShowDiv span {
   padding-left: 5px;
   font-weight: 400;
 }
-
-.DisplayOptions {
+.containDisplayOptions{
+  width: 100%;
+  height: 100vh;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
   position: absolute;
+}
+.DisplayOptions {
+  /* position: absolute;
   top: 25vh;
-  left: 80vh;
+  left: 100vh;
+   */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--bg-color);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
@@ -1081,7 +1094,7 @@ main .LastAside .WhoToFollow .MoreShowDiv span {
     width: 100%;
   }
   main .MainTwetter .Mid-Aside .HomeBar {
-    width: 75.5%;
+    width: 81.5%;
   }
   main .LastAside {
     display: none;
@@ -1122,7 +1135,7 @@ main .LastAside .WhoToFollow .MoreShowDiv span {
     width: 100%;
   }
   main .MainTwetter .Mid-Aside .HomeBar {
-    width: 69.8%;
+    width: 70%;
   }
   main .LastAside {
     display: none;
@@ -1171,7 +1184,7 @@ main .LastAside .WhoToFollow .MoreShowDiv span {
     width: 100%;
   }
   main .MainTwetter .Mid-Aside .HomeBar {
-    width: 45%;
+    width: 44%;
   }
 }
 @media (min-width: 1300px) and (max-width: 1600px) {
@@ -1186,7 +1199,7 @@ main .LastAside .WhoToFollow .MoreShowDiv span {
     width: 100%;
   }
   main .MainTwetter .Mid-Aside .HomeBar {
-    width: 38.8%;
+    width: 42.4%;
   }
   .MoreList {
     top: 34vh;

@@ -25,7 +25,7 @@ let firstTweets = document.getElementById("Home2")
 let moreList = document.getElementById("MoreList");
 let buttMore = document.getElementById("MoreButt");
 
-
+let TwitterIcon = document.getElementById("TwitterIcon")
 // -----------------------------------------
 
 // LocalStorage Save
@@ -196,13 +196,17 @@ const body = document.body;
 
 darkModeButton.addEventListener('click', () => {
   body.classList.add('Dark-mode');
-//   body.classList.remove('lightMode');
+  //   body.classList.remove('lightMode');
+    TwitterIcon.src = "Images/twitterwhite-removebg-preview.png"
+    TwitterIcon.style.width = "55px"
   localStorage.setItem('mode', 'dark');
 });
 
 lightModeButton.addEventListener('click', () => {
   body.classList.remove('Dark-mode');
 //   body.classList.add('lightMode');
+    TwitterIcon.src = "Images/twitter xs.png"
+    
   localStorage.setItem('mode', 'light');
 });
 
@@ -210,9 +214,9 @@ lightModeButton.addEventListener('click', () => {
 const savedMode = localStorage.getItem('mode');
 
 if (savedMode === 'dark') {
-  body.classList.add('Dark-mode');
+    body.classList.add('Dark-mode');
 } else if (savedMode === 'light') {
-  body.classList.add('lightMode');
+    body.classList.add('lightMode');
 }
 
 
